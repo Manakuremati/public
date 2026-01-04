@@ -1,8 +1,10 @@
 #!/bin/ash
 
-# ddns script for OpenWrt running directly with ash.
+# ddns script for OpenWrt running directly with ash
 # packets needed: curl, jq
 # this script is made for cloudflare and it's API
+#
+# this is certified vibe code
 
 # dynamic values –‑ edit the lines below if needed
 CLOUDFLARE_TOKEN="YOUR_API_TOKEN"

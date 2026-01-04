@@ -1,11 +1,13 @@
 #!/bin/ash
 set -eu
 
-# wireguard watchdog script for OpenWrt
+# wireguard watchdog script for OpenWrt running directly with ash
 # packets needed: curl, jq
 # this script resolves stale peers of given wireguard interfaces directly via cloudflare API
 # by doing so it always gets the most up to date records, which are provided by the separate ddns.sh script
 # if the cloudflare API is unavailable normal DNS will be used
+#
+# this is certified vibe code
 
 # dynamic values -- edit the lines below if needed
 INTERFACE_MAP="
